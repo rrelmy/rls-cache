@@ -1,0 +1,11 @@
+Rémy's LocalStorage Cache 
+
+JavaScript interface for HTML5 Storage with fallbacks
+
+Methods:
+RlsCache.set(key, value, ttl);
+RlsCache.get(key);
+RlsCache.remove(key);
+RlsCache.clear();
+
+This script is provided as is without warranty!

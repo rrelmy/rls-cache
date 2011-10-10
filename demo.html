@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rémy's Localstorage Cache</title>
+        
+        <script src="rls-cache.js"></script>
+        <script>
+        var getData = function() {
+            var cacheKey = 'data';
+            var result = RlsCache.get(cacheKey);
+            if (result === null) {
+                console.info('calculation going on');
+                result = 'some data';
+                RlsCache.set(cacheKey, result, 10);
+            }
+            return result;
+        };
+        //RlsCache.remove('data');
+        console.info(getData());
+        console.info(getData());
+        console.info(getData());        
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
