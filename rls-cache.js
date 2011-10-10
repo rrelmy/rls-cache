@@ -28,7 +28,7 @@ var RlsCache = function() {
      * check for native JSON support
      * a polyfill supporting stringify and parse would be sufficient.
      */
-    var nativeJsonSupport = !!JSON && !!JSON.stringify;
+    var nativeJsonSupport = typeof JSON == 'object' && !!JSON.stringify;
     
     /**
      * check for html5 storage and JSON support
@@ -188,6 +188,6 @@ var RlsCache = function() {
             }
         }
     }
-
+console.info(backend);
     return backends[backend];
 }();
