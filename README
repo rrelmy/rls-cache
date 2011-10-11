@@ -9,3 +9,17 @@ RlsCache.remove(key);
 RlsCache.clear();
 
 This script is provided as is without warranty!
+
+Compatbility for Storage backend
+- IE 8
+- Firefox 3.5 (because of native JSON, with polyfill Firefox 2)
+- Chrome 4
+- Opera 10.50
+- Safari 4
+- iOS 4
+- Android 2.1
+- Opera Mobile 11
+
+TODO/IDEAS
+- configurable backends
+- external backends?

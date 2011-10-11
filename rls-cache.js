@@ -3,10 +3,6 @@
  * @author Rémy M. Böhler
  * @license none (public domain), but feel free to buy me some beer
  * @link http://dev.w3.org/html5/webstorage/
- * @todo check browser support (only checked with chrome 14 and ff7)
- * @todo internet explorer backends?
- * @todo configurable backends
- * @todo external backends support
  */
 var RlsCache = function() {
     var EXPIRATION_SUFFIX = '-expiration';
@@ -188,6 +184,5 @@ var RlsCache = function() {
             }
         }
     }
-console.info(backend);
     return backends[backend];
 }();
